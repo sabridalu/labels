@@ -27,8 +27,8 @@ function Login() {
 
     if (error) setMessage(error.message);
     else {
-      setMessage("Login effettuato!");
-      navigate("/create-label"); // redirect dopo login
+    setMessage("Login effettuato!");
+    navigate("/dashboard"); // dopo login vai alla dashboard
     }
   };
 
