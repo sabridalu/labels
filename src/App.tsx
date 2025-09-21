@@ -3,6 +3,7 @@ import CreateLabel from './pages/CreateLabel';
 import Login from './pages/Login';
 import Normativa from './pages/Nomrativa';
 import Register from './pages/Register';
+import Profile from './pages/Profile';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
         <Link to="/register">Register</Link> |{" "}
         <Link to="/create-label">Crea Etichetta</Link> |{" "}
         <Link to="/normativa">Normativa</Link>
+        <Link to="/profile">Profilo</Link>
+
       </nav>
 
       <Routes>
@@ -20,6 +23,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/create-label" element={<CreateLabel />} />
         <Route path="/normativa" element={<Normativa />} />
+        <Route path="/profile" element={<Profile />} />
+
       </Routes>
     </div>
   );
