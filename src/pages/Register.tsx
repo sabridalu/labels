@@ -59,7 +59,7 @@ function Register() {
   };
 
   return (
-    <div>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
       <h1>Registrazione</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input placeholder="Nome" {...register("nome")} />
@@ -93,6 +93,7 @@ function Register() {
       </form>
       {message && <p>{message}</p>}
     </div>
+    
   );
 }
 

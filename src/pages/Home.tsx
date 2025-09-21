@@ -7,22 +7,18 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (user) {
-      navigate("/dashboard"); // se già loggato, vai direttamente alla dashboard
-    }
+    if (user) navigate("/dashboard");
   }, [user, navigate]);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Benvenuto su Shipping Labels</h1>
-      <p>Accedi o crea un account per continuare</p>
-      <div style={{ marginTop: "20px" }}>
-        <Link to="/login">
-          <button style={{ marginRight: "10px" }}>Login</button>
-        </Link>
-        <Link to="/register">
-          <button>Registrati</button>
-        </Link>
+    <div style={{ textAlign: "center" }}>
+      <h1>Shipping Labels</h1>
+      <p style={{ marginBottom: "20px" }}>
+        Accedi o crea un account per continuare
+      </p>
+      <div>
+        <Link to="/login"><button>Login</button></Link>
+        <Link to="/register"><button>Registrati</button></Link>
       </div>
     </div>
   );

@@ -33,21 +33,19 @@ function Login() {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <input placeholder="Email" {...register("email")} />
-          {errors.email && <p>{errors.email.message}</p>}
-        </div>
-        <div>
-          <input type="password" placeholder="Password" {...register("password")} />
-          {errors.password && <p>{errors.password.message}</p>}
-        </div>
-        <button type="submit">Accedi</button>
-      </form>
-      {message && <p>{message}</p>}
-    </div>
+ <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
+  <form onSubmit={handleSubmit(onSubmit)}>
+    <h1>Login</h1>
+    <input placeholder="Email" {...register("email")} />
+    {errors.email && <p>{errors.email.message}</p>}
+
+    <input type="password" placeholder="Password" {...register("password")} />
+    {errors.password && <p>{errors.password.message}</p>}
+
+    <button type="submit">Accedi</button>
+    {message && <p>{message}</p>}
+  </form>
+</div>
   );
 }
 
