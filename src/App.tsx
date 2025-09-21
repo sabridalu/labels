@@ -1,8 +1,9 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import Login from '@pages/Login';
-import Register from '@pages/Register';
-import CreateLabel from '@pages/CreateLabel';
-import Normativa from '@pages/Normativa';
+import CreateLabel from './pages/CreateLabel';
+import Login from './pages/Login';
+import Normativa from './pages/Nomrativa';
+import Register from './pages/Register';
+
 
 function App() {
   return (
